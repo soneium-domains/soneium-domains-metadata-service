@@ -12,8 +12,8 @@ const endpointsFiles = ['./src/endpoint.ts'];
 const doc = {
   info: {
     version: '0.0.1-alpha.1',
-    title: 'ENS Metadata Service',
-    description: 'Set of endpoints to query ENS metadata and more',
+    title: 'Soneium Domains Metadata Service',
+    description: 'Set of endpoints to query Soneium Domains Metadata and more',
     contact: 'contact@ens.domains',
     license: 'MIT License',
     x_logo: {
@@ -124,9 +124,9 @@ const doc = {
         url: 'https://app.ens.domains/name/nick.eth',
         version: 0,
         background_image:
-          'https://metadata.ens.domains/mainnet/avatar/nick.eth',
+          'https://metadata.soneium.domains/mainnet/avatar/nick.eth',
         image_url:
-          'https://metadata.ens.domains/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image',
+          'https://metadata.soneium.domains/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image',
       },
     },
   },

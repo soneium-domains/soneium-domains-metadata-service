@@ -111,10 +111,10 @@ export class MockEntry {
     });
 
     (_metadata as Metadata).setImage(
-      `https://metadata.ens.domains/sepolia/${ADDRESS_NAME_WRAPPER}/${this.namehash}/image`
+      `https://metadata.soneium.domains/sepolia/${ADDRESS_NAME_WRAPPER}/${this.namehash}/image`
     );
     (_metadata as Metadata).setBackground(
-      `https://metadata.ens.domains/sepolia/avatar/${name}`
+      `https://metadata.soneium.domains/sepolia/avatar/${name}`
     );
 
     this.domainResponse = {

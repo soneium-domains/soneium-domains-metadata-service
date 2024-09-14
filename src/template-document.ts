@@ -253,10 +253,10 @@ export default function createDocumentfromTemplate({
               <div>
                 <h3>ENS NFT ${buffer ? 'Avatar' : ''} Image API Endpoint</h3>
                 <p>
-                  <a href="https://metadata.ens.domains/${metadata.network}/${
+                  <a href="https://metadata.soneium.domains/${metadata.network}/${
     buffer ? 'avatar' : '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85'
   }/${metadata.name}${buffer ? '' : '/image'}">
-                    https://metadata.ens.domains/${metadata.network}/${
+                    https://metadata.soneium.domains/${metadata.network}/${
     buffer ? 'avatar' : '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85'
   }/${metadata.name}${buffer ? '' : '/image'}
                   </a>

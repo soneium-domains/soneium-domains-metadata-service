@@ -1,8 +1,9 @@
 {
-  "name": "ens-metadata-service",
+  "name": "soneium-domains-metadata-service",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Makoto Inoue <2630+makoto@users.noreply.github.com>",
+  "main": "src/index.ts",
+  "author": "Sam Shariat <t.me/samshariat>",
+  "repository": "https://github.com/sam-shariat/soneium-domains-metadata-service",
   "license": "MIT",
   "engines": {
     "node": ">=16.15"
@@ -38,15 +39,8 @@
     "viem": "2.9.2"
   },
   "scripts": {
-    "build": "yarn appconfgen && tsc --project ./ && cpx 'src/assets/**' 'dist/assets'",
     "dev": "ENV=local ts-node-dev --inspect -- src/index.ts",
-    "start": "node dist/index.js",
-    "deploy": "ENV=prod yarn build && gcloud app deploy --project=ens-metadata-service",
-    "deploy:test": "ENV=prod yarn build && gcloud app deploy --no-promote --project=ens-metadata-service",
-    "test": "ENV=local ava -v --serial --timeout=2m",
-    "test:cov": "nyc --reporter=json --reporter=text ava --serial",
-    "docgen": "node docgen.js",
-    "appconfgen": "node appconfgen.js"
+    "start": "node src/index.ts"
   },
   "devDependencies": {
     "@types/compression": "^1.7.2",

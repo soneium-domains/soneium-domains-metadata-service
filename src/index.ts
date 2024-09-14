@@ -76,7 +76,7 @@ function shouldCompress(req: Request, res: Response) {
   return compression.filter(req, res);
 }
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`APP_LOG::App listening on port ${PORT}`);
 });
@@ -86,7 +86,7 @@ app.get('/favicon.ico', (req, res) => res.status(204).end());
 app.get(
   '/docs',
   docUI({
-    title: 'ENS Metadata Service',
+    title: 'Soneium Domains Metadata Service',
     specUrl: '/assets/doc_output.json',
   })
 );

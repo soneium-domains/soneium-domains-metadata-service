@@ -1,6 +1,8 @@
 import { Express } from 'express';
 
 import { ensMetadata } from './controller/ensMetadata';
+import { ensMetadata721 } from './controller/ensMetadata721';
+import { ensMetadata1155 } from './controller/ensMetadata1155';
 import { ensImage } from './controller/ensImage';
 import { ensRasterize } from './controller/ensRasterize';
 import { avatarMetadata } from './controller/avatarMetadata';
@@ -17,6 +19,26 @@ export default function (app: Express) {
   app.get(
     '/:networkName/:contractAddress(0x[a-fA-F0-9]{40})/:tokenId',
     ensMetadata
+  );
+
+  app.get(
+    '//erc721/:tokenId',
+    ensMetadata721
+  );
+
+  app.get(
+    '/erc721/:tokenId',
+    ensMetadata721
+  );
+
+  app.get(
+    '//erc1155/:tokenId',
+    ensMetadata1155
+  );
+
+  app.get(
+    '/erc1155/:tokenId',
+    ensMetadata1155
   );
 
   app.get(
